@@ -10,5 +10,12 @@
     <string name="kg_text">Kg</string>
     <string name="cm_text">cm</string>
     <string name="btn_text">Calculate</string>
+    <string name="normal_weight_info">(Normal range is 18.5 – 24.9)</string>
+    <string name="under_weight_label">Under weight</string>
+    <string name="healthy_label">Healthy</string>
+    <string name="over_weight_label">Over weight</string>
+    <string name="obese_label">Obese</string>
+
+
 
 </resources>
