@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Prueba_laboratorio03</string>
+    <string name="text_title">Cantidad de dinero</string>
+    <string name="count_money">0</string>
+    <string name="five_cts_text">$0.05</string>
+    <string name="ten_cts_text">$0.10</string>
+    <string name="quarter_cts_text">$0.25</string>
+    <string name="dollar_cts_text">$1.00</string>
+</resources>
