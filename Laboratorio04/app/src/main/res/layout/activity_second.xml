@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_text_2_Activity"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="179dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_editTextVIew"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_text"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/receive_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/name_text_2"
+        app:layout_constraintStart_toEndOf="@+id/name_text_2"
+        app:layout_constraintTop_toTopOf="@+id/name_text_2" />
+
+    <TextView
+        android:textColor="@color/black"
+
+        android:id="@+id/correo_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:text="@string/correo_editTextVIew"
+        app:layout_constraintStart_toStartOf="@+id/name_text_2"
+        app:layout_constraintTop_toBottomOf="@+id/name_text_2" />
+
+    <TextView
+        android:id="@+id/receive_correo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/correo_text_2"
+        app:layout_constraintStart_toEndOf="@+id/correo_text_2" />
+
+    <TextView
+        android:textColor="@color/black"
+
+        android:id="@+id/telefono_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:text="@string/numero_editTextVIew"
+        app:layout_constraintStart_toStartOf="@+id/correo_text_2"
+        app:layout_constraintTop_toBottomOf="@+id/correo_text_2" />
+
+    <TextView
+        android:id="@+id/receive_telefono_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/telefono_text_2"
+        app:layout_constraintStart_toEndOf="@+id/telefono_text_2" />
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:text="@string/title_button_2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/telefono_text_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

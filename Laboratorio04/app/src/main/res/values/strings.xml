@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Laboratorio-04</string>
+    <string name="name_editTextVIew">Nombre</string>
+    <string name="correo_editTextVIew">Correo electrónico</string>
+    <string name="numero_editTextVIew">Número de teléfono</string>
+    <string name="title_button">Guardar</string>
+
+    <string name="title_text">Rellena la siguiente información</string>
+    <string name="title_text_2_Activity">Confirma tu información</string>
+    <string name="title_button_2">Compartir</string>
+
+
+</resources>

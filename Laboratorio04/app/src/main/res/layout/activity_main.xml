@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/medium_gap"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_default"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_gap"
+            android:layout_marginEnd="@dimen/medium_gap"
+            android:layout_marginBottom="@dimen/medium_gap"
+            android:gravity="center"
+            android:text="@string/title_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_title"
+            app:layout_constraintBottom_toTopOf="@+id/name_text"
+            app:layout_constraintEnd_toEndOf="@+id/name_text"
+            app:layout_constraintStart_toStartOf="@+id/name_text" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_text"
+            style="@style/MyTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_gap"
+            android:layout_marginEnd="@dimen/medium_gap"
+            android:layout_marginBottom="404dp"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_editTextView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="@string/name_editTextVIew"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="276dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/correo_text"
+        style="@style/MyTextField"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:layout_marginEnd="@dimen/medium_gap"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_text">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/correo_editText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/correo_editTextVIew"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="276dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telefono_text"
+        style="@style/MyTextField"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:layout_marginEnd="@dimen/medium_gap"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correo_text">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telefono_editText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/numero_editTextVIew"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="276dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:text="@string/title_button"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/button_color"
+        app:layout_constraintEnd_toEndOf="@+id/telefono_text"
+        app:layout_constraintStart_toStartOf="@+id/telefono_text"
+        app:layout_constraintTop_toBottomOf="@+id/telefono_text"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

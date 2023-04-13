@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_gap">8dp</dimen>
+    <dimen name="size_title">32dp</dimen>
+    <dimen name="size_text">16dp</dimen>
+
+    <dimen name="margin_default">15dp</dimen>
+</resources>
