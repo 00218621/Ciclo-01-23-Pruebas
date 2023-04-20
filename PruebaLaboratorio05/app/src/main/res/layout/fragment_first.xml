@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundLayout"
+    tools:context=".FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_billboard"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_billboard_text"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_title"
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/one_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_card"
+                app:cardCornerRadius="@dimen/radius_card"
+            android:backgroundTint="@color/cardLayout"
+            android:layout_marginTop="@dimen/medium_gap">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/margin_billboard">
+                
+                <ImageView
+                    android:layout_width="@dimen/width_image"
+                    android:layout_height="@dimen/height_image"
+                    android:src="@drawable/star_wars"
+                    />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_one_movie"
+                        android:textSize="@dimen/size_title_movie"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/calification"
+                        android:textSize="@dimen/size_calification"
+                        android:text="@string/one_calification"/>
+
+                </LinearLayout>
+                
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/second_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_card"
+            app:cardCornerRadius="@dimen/radius_card"
+            android:backgroundTint="@color/cardLayout"
+            android:layout_marginTop="@dimen/medium_card">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/margin_billboard">
+
+                <ImageView
+                    android:layout_width="@dimen/width_image"
+                    android:layout_height="@dimen/height_image"
+                    android:src="@drawable/harry_potter"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_second_movie"
+                        android:textSize="@dimen/size_title_movie"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/calification"
+                        android:textSize="@dimen/size_calification"
+                        android:text="@string/second_calification"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/new_movie_button"
+                android:layout_width="@dimen/radius_one_button"
+                android:layout_height="@dimen/radius_second_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_new_button_text"
+                android:text="@string/new_movie_text"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

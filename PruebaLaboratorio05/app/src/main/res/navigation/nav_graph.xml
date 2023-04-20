@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment2">
+    <fragment
+        android:id="@+id/firstFragment2"
+        android:name="com.example.prueba_laboratorio_05.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment2_to_secondFragment2"
+            app:destination="@id/secondFragment2" />
+        <action
+            android:id="@+id/action_firstFragment2_to_threeFragment"
+            app:destination="@id/threeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment2"
+        android:name="com.example.prueba_laboratorio_05.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.example.prueba_laboratorio_05.ThreeFragment"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" />
+</navigation>
