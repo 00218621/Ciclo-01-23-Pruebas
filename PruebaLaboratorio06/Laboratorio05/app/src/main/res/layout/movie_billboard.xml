@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundLayout">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_billboard"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_billboard_text"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_title"
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/one_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/radius_card"
+            android:backgroundTint="@color/cardLayout"
+            android:layout_marginTop="@dimen/medium_gap">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/margin_billboard">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name_movie"
+                        tools:text="Nombre de pelicula"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_title_movie"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/category_movie"
+                        tools:text="Categoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_title_movie"
+                        android:text="@string/one_calification"/>
+                    <TextView
+                        android:id="@+id/description_movie"
+                        tools:text="Descripción"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_title_movie"
+                        android:text="@string/one_calification"/>
+                    <TextView
+                        android:id="@+id/qualification_movie"
+                        tools:text="Calificación"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/calification"
+                        android:textSize="@dimen/size_calification"
+                        android:text="@string/one_calification"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/new_movie_button"
+    android:layout_width="@dimen/width_radius"
+    app:cardCornerRadius="@dimen/radius_button"
+    android:layout_height="@dimen/height_radius"
+    android:backgroundTint="@color/buttonColor"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/new_movie_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_new_button_text"/>
+
+</androidx.cardview.widget.CardView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
