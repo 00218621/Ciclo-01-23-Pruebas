@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.laboratorio_05.ui.movie.viewmodel.MovieViewModel" />
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundLayout"
+        tools:context=".ui.movie.MovieFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_billboard">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/width_image_one"
+                android:layout_height="@dimen/height_image_movie"
+                android:layout_marginTop="@dimen/top_image_movie"
+                android:src="@drawable/no_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_movie"
+                android:text="@={viewModel.name}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/extra_premium_gap"
+                android:gravity="center"
+                android:contentDescription="name movie"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_title_one_movie_2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/category_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/radius_one_button"
+                android:layout_marginTop="@dimen/extra_premium_gap"
+                android:contentDescription="category"
+                android:text="@={viewModel.category}"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/title_movie"
+                app:layout_constraintTop_toBottomOf="@+id/title_movie" />
+
+            <TextView
+                android:id="@+id/qualification_movie"
+                android:layout_width="wrap_content"
+                android:text="@={viewModel.qualification}"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/height_image"
+                android:layout_marginEnd="@dimen/medium_gap"
+                android:contentDescription="qualification"
+                android:textColor="@color/calification"
+                android:textSize="@dimen/size_calification"
+                app:layout_constraintBottom_toBottomOf="@+id/category_movie"
+                app:layout_constraintEnd_toEndOf="@+id/title_movie"
+                app:layout_constraintStart_toEndOf="@+id/category_movie"
+                app:layout_constraintTop_toTopOf="@+id/category_movie" />
+
+            <TextView
+                android:id="@+id/description_movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_billboard"
+                android:layout_marginTop="@dimen/medium_second_fragment_gap"
+                android:layout_marginEnd="@dimen/margin_billboard"
+                android:contentDescription="description"
+                android:gravity="center_horizontal"
+                android:text="@={viewModel.description}"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category_movie" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>

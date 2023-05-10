@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Laboratorio-08</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_billboard_text">Billboard</string>
+    <string name="title_one_movie">Star Wars episode 3:            La venganza de los Sith</string>
+    <string name="one_calification">9.8</string>
+    <string name="second_calification">9.5</string>
+    <string name="title_second_movie">Harry Potter y la Piedra Filososfal</string>
+    <string name="new_movie_text">+</string>
+    <string name="title_new_movie_text">New movie</string>
+    <string name="name_hint_text">Name</string>
+    <string name="category_hint_text">Category</string>
+    <string name="description_hint_text">Description</string>
+    <string name="calification_hint_text">Calification</string>
+    <string name="second_text_button">Submit</string>
+    <string name="ficcion_text">Ciencia Ficción</string>
+    <string name="description_one_movie">"La trama describe una época en la que los Caballeros Jedi se han esparcido por toda la galaxia, dirigiendo un ejército clon masivo para enfrentar a los Separatistas Galácticos, tres años después del inicio de las Guerras Clon. El Canciller Palpatine fue secuestrado y el Maestro Jedi Obi-Wan Kenobi, acompañado de su aprendiz Anakin Skywalker, es enviado a rescatarlo en una misión, donde también debe eliminar a los Líderes Separatistas, el Conde Dooku y el General Grievous, para concluir el conflicto galáctico. "</string>
+</resources>

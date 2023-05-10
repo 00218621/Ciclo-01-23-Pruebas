@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_gap">8dp</dimen>
+    <dimen name="margin_billboard">12dp</dimen>
+    <dimen name="height_card">100dp</dimen>
+    <dimen name="radius_card">7dp</dimen>
+    <dimen name="medium_card">16dp</dimen>
+    <dimen name="size_title">35sp</dimen>
+    <dimen name="width_image">110dp</dimen>
+    <dimen name="height_image">50dp</dimen>
+    <dimen name="size_title_movie">20dp</dimen>
+    <dimen name="size_calification">23.5dp</dimen>
+    <dimen name="radius_one_button">65dp</dimen>
+    <dimen name="radius_second_button">70dp</dimen>
+    <dimen name="size_new_button_text">25dp</dimen>
+    <dimen name="size_title_second_fragment">55sp</dimen>
+    <dimen name="medium_second_fragment_gap">40dp</dimen>
+    <dimen name="size_editText_fragment">75dp</dimen>
+    <dimen name="size_hint_editText_fragment">25dp</dimen>
+    <dimen name="extra_gap">20dp</dimen>
+    <dimen name="extra_premium_gap">32dp</dimen>
+    <dimen name="second_button_width">130dp</dimen>
+    <dimen name="second_button_height">65dp</dimen>
+    <dimen name="radius_button">35dp</dimen>
+    <dimen name="height_radius">60dp</dimen>
+    <dimen name="width_radius">60dp</dimen>
+    <dimen name="top_image_movie">55dp</dimen>
+    <dimen name="width_image_one">200dp</dimen>
+    <dimen name="height_image_movie">150dp</dimen>
+    <dimen name="size_title_one_movie_2">16dp</dimen>
+    <dimen name="margin_card_item">16dp</dimen>
+    <dimen name="MaxElevation_item">16dp</dimen>
+    <dimen name="margin_btnNewMovie">16dp</dimen>
+    <dimen name="borderWidth_btnNewMovie">0dp</dimen>
+</resources>
