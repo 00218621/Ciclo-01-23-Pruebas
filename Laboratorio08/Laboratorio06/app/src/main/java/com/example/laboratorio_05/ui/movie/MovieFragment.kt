@@ -21,6 +21,7 @@ class MovieFragment : Fragment() {
     private val movieViewModel: MovieViewModel by activityViewModels{
         MovieViewModel.Factory
     }
+
     private lateinit var binding: FragmentMovieBinding
     private lateinit var adapter: MovieRecyclerViewAdapter
 
@@ -75,9 +76,7 @@ class MovieFragment : Fragment() {
 
     private fun setViewMovie(){
         binding.viewModel = movieViewModel
-        binding.imageView.setOnClickListener {
-            Toast.makeText(requireContext(),"HOLA",Toast.LENGTH_SHORT).show()
-        }
+
     }
 
 

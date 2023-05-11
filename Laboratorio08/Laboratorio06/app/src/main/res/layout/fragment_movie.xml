@@ -19,27 +19,39 @@
             android:layout_margin="@dimen/margin_billboard">
 
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imageView"
+            <LinearLayout
+                android:id="@+id/LinearImage"
                 android:layout_width="@dimen/width_image_one"
-                android:layout_height="@dimen/height_image_movie"
-                android:layout_marginTop="@dimen/top_image_movie"
-                android:src="@drawable/no_image"
+                android:layout_height="@dimen/height_image_movieFragment"
+                android:layout_marginTop="@dimen/extra_gap"
+
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
 
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/top_image_movie"
+                    android:src="@drawable/no_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
             <TextView
                 android:id="@+id/title_movie"
                 android:text="@={viewModel.name}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
                 android:layout_marginTop="@dimen/extra_premium_gap"
                 android:gravity="center"
                 android:contentDescription="name movie"
                 android:textColor="@color/white"
                 android:textSize="@dimen/size_title_one_movie_2"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                app:layout_constraintTop_toBottomOf="@+id/LinearImage" />
 
             <TextView
                 android:id="@+id/category_movie"
@@ -50,6 +62,7 @@
                 android:contentDescription="category"
                 android:text="@={viewModel.category}"
                 android:textColor="@color/white"
+                android:textSize="@dimen/size_category"
                 app:layout_constraintStart_toStartOf="@+id/title_movie"
                 app:layout_constraintTop_toBottomOf="@+id/title_movie" />
 
