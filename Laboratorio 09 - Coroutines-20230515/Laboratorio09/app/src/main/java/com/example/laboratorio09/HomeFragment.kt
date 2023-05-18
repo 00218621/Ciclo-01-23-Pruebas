@@ -24,7 +24,6 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //TODO: Use binding to navigate to the other fragments
         binding.mainThreadButton.setOnClickListener {
             it.findNavController().navigate(R.id.action_homeFragment_to_mainThreadFragment)
         }
