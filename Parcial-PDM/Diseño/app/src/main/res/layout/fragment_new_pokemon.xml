@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.pokemon.newpokemon.NewPokemonFragment">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.repasoparcial.ui.pokemon.viewmodel.PokemonViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/marginTop_title"
+            android:text="New Pokemon"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_editText"
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:text="@={viewModel.name}"
+                android:layout_height="70dp"
+                android:background="@color/cardLayout"
+                android:layout_marginTop="35dp"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/type_editText"
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_gap"
+            android:hint="Type"
+            android:textColorHint="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/name_editText">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:text="@={viewModel.type}"
+                android:layout_height="70dp"
+                android:background="@color/cardLayout"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/qualification_editText"
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_gap"
+            android:hint="Qualification"
+            android:textColorHint="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/type_editText">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:text="@={viewModel.qualification}"
+                android:layout_height="70dp"
+                android:background="@color/cardLayout"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Submit"
+            android:onClick="@{() -> viewModel.createPokemon()}"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/marginTop_title"
+            app:layout_constraintEnd_toEndOf="@+id/qualification_editText"
+            app:layout_constraintStart_toStartOf="@+id/qualification_editText"
+            app:layout_constraintTop_toBottomOf="@+id/qualification_editText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
